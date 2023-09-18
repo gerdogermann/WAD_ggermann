@@ -79,5 +79,20 @@
         </li>
     </ul>
 </footer>
+<form action="/action_page.php">
+    <label for="cTitle">Course Title:</label><br>
+    <input type="text" id="cTitle" value=""><br>
+    <label for="semester">Semester:</label><br>
+    <select name="semester" id="semester">
+        <option value="fall">Fall</option>
+        <option value="spring">Spring</option>
+    </select><br>
+    <b>Attendance:</b><br>
+    <input type="radio" id="virtual" name="attendance" value="Virtual attendance">
+    <label for="virtual">Virtual attendance</label><br>
+    <input type="radio" id="physical" name="attendance" value="Physical attendance">
+    <label for="physical">Physical attendance</label><br>
+    <input type="submit" value="Submit">
+</form>
 </body>
 </html>
