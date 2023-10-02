@@ -4,17 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="res/images/Favicon.ico">
+    <link rel="stylesheet" href="res/css/style.css">
     <title>My Dashboard</title>
 </head>
 <body>
-<header>
-    <strong>Welcome to your dashboard!</strong>
+<header class="header">
+    <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <a class="logo" href="#"><img src="res/images/pilt.jpg" width="50" height="50" alt="My picture"></a>
 </header>
-<div>
-    <div>
-        <img src="res/images/pilt.jpg" width="128" height="128" alt="My picture">
-    </div>
-    <div>
+
+<p class="static">This is a static paragraph</p>
+
+<p class="relative">This is a relative paragraph</p>
+
+<div class ="parentpositioning">
+    <p class ="absolute">This is an absolute paragraph</p>
+</div>
+
+<p class ="fixed">This is a fixed paragraph</p>
+
+<p class ="sticky">This is a sticky paragraph</p>
+<section>
+    <h1>Personal Information</h1>
+    <div class="nav">
         <ul>
             <li>Gerdo Germann</li>
             <li> 24/01/2003</li>
@@ -24,7 +41,7 @@
     <div>
         <strong>2.65</strong>
     </div>
-</div>
+</section>
 <section>
     <h1>Courses</h1>
     <table>
@@ -72,16 +89,20 @@
         </tfoot>
     </table>
 </section>
-<footer>
-    <ul>
-        <li>
-            <a href="https://ois2.ut.ee/" target="_blank">OIS</a>
-        </li>
-        <li>
-            <a href="https://courses.cs.ut.ee/" target="_blank">Courses</a>
-        </li>
-    </ul>
-</footer>
+<div class="grid">
+
+    <p>Course 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ullam voluptates veniam, alias modi nulla nobis nisi quo reprehenderit cupiditate, veritatis tenetur voluptate corporis corrupti ipsa, accusantium minus porro quae.</p>
+
+    <p>Course 2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ullam voluptates veniam, alias modi nulla nobis nisi quo reprehenderit cupiditate, veritatis tenetur voluptate corporis corrupti ipsa, accusantium minus porro quae.</p>
+
+
+    <p>Course 3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ullam voluptates veniam, alias modi nulla nobis nisi quo reprehenderit cupiditate, veritatis tenetur voluptate corporis corrupti ipsa, accusantium minus porro quae.</p>
+
+    <p>Course 4 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ullam voluptates veniam, alias modi nulla nobis nisi quo reprehenderit cupiditate, veritatis tenetur voluptate corporis corrupti ipsa, accusantium minus porro quae.</p>
+
+
+</div>
+
 <section>
 <!--suppress HtmlUnknownTarget -->
 <form action="/action_page.php">
@@ -100,5 +121,15 @@
     <input type="submit" value="Submit">
 </form>
 </section>
+<footer>
+    <ul>
+        <li>
+            <a href="https://ois2.ut.ee/" target="_blank">OIS</a>
+        </li>
+        <li>
+            <a href="https://courses.cs.ut.ee/" target="_blank">Courses</a>
+        </li>
+    </ul>
+</footer>
 </body>
 </html>
